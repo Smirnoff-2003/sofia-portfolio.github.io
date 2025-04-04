@@ -1,35 +1,144 @@
-<div style="width: 100%; height: 100%; position: relative; background: #F7F4EC; overflow: hidden">
-  <div style="width: 1450px; height: 78px; left: 0px; top: 0px; position: absolute; background: #EAE3CA"></div>
-  <div style="width: 1450px; height: 418px; left: 0px; top: 156px; position: absolute; background: #EAE3CA"></div>
-  <img style="width: 385px; height: 385px; left: 60px; top: 172px; position: absolute; border-radius: 1000px" src="https://placehold.co/385x385" />
-  <div data-property-1="Default" style="width: 417px; height: 372px; left: 996px; top: 611px; position: absolute">
-      <div style="width: 417px; height: 372px; left: 0px; top: 0px; position: absolute; background: #E9E0C2"></div>
-      <img style="width: 359px; height: 250px; left: 31px; top: 27px; position: absolute" src="https://placehold.co/359x250" />
-      <div style="left: 31px; top: 277px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">Project</div>
-  </div>
-  <div data-property-1="Default" style="width: 417px; height: 372px; left: 516px; top: 611px; position: absolute">
-      <div style="width: 417px; height: 372px; left: 0px; top: 0px; position: absolute; background: #E9E0C2"></div>
-      <img style="width: 359px; height: 250px; left: 31px; top: 27px; position: absolute" src="https://placehold.co/359x250" />
-      <div style="left: 31px; top: 277px; position: absolute; color: white; font-size: 35px; font-family: Inter; font-weight: 400; word-wrap: break-word">Icon design</div>
-  </div>
-  <div data-property-1="Default" style="width: 417px; height: 372px; left: 28px; top: 611px; position: absolute">
-      <div style="width: 417px; height: 372px; left: 0px; top: 0px; position: absolute; background: #E9E0C2"></div>
-      <img style="width: 359px; height: 250px; left: 31px; top: 27px; position: absolute" src="https://placehold.co/359x250" />
-      <div style="left: 31px; top: 277px; position: absolute; color: white; font-size: 35px; font-family: Inter; font-weight: 400; word-wrap: break-word">Thematic Games <br/>project<br/></div>
-  </div>
-  <div data-property-1="Default" style="width: 223px; height: 108px; left: 1171px; top: 437px; position: absolute">
-      <div style="width: 223px; height: 108px; left: 0px; top: 0px; position: absolute; background: #CFDBAD; border-radius: 1000px"></div>
-      <div style="left: 25px; top: 36px; position: absolute; color: white; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word">Learn more</div>
-  </div>
-  <div data-property-1="Default" style="width: 114px; height: 53px; left: 895px; top: 93px; position: absolute">
-      <div style="left: 0px; top: 0px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">Home<br/></div>
-  </div>
-  <div data-property-1="Default" style="width: 154px; height: 51px; left: 1223px; top: 90px; position: absolute">
-      <div style="width: 156.75px; height: 25.50px; left: 0px; top: 0px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">Contact</div>
-  </div>
-  <div data-property-1="Default" style="width: 114px; height: 60px; left: 1054px; top: 93px; position: absolute">
-      <div style="width: 116.04px; height: 30px; left: 0px; top: 0px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">About</div>
-  </div>
-  <div style="width: 590px; height: 260px; left: 531px; top: 242px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.........</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Layout</title>
+    <style>
+        body {
+            margin: 0;
+            background: #F7F4EC;
+            font-family: Inter, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-bar {
+            width: 1450px;
+            height: 78px;
+            position: absolute;
+            background: #EAE3CA;
+        }
+
+        .main-section {
+            width: 1450px;
+            height: 418px;
+            position: absolute;
+            top: 156px;
+            background: #EAE3CA;
+        }
+
+        .circle-image {
+            width: 385px;
+            height: 385px;
+            position: absolute;
+            top: 172px;
+            left: 60px;
+            border-radius: 1000px;
+        }
+
+        .card {
+            width: 417px;
+            height: 372px;
+            position: absolute;
+            background: #E9E0C2;
+        }
+
+        .card img {
+            width: 359px;
+            height: 250px;
+            position: absolute;
+            top: 27px;
+            left: 31px;
+        }
+
+        .card-text {
+            position: absolute;
+            top: 277px;
+            left: 31px;
+            color: white;
+            font-size: 35px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .button {
+            width: 223px;
+            height: 108px;
+            position: absolute;
+            background: #CFDBAD;
+            border-radius: 1000px;
+        }
+
+        .button-text {
+            position: absolute;
+            top: 36px;
+            left: 25px;
+            color: white;
+            font-size: 30px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .nav-item {
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .bla-text {
+            width: 590px;
+            height: 260px;
+            position: absolute;
+            top: 242px;
+            left: 531px;
+            color: white;
+            font-size: 40px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar"></div>
+        <div class="main-section"></div>
+        <img class="circle-image" src="https://placehold.co/385x385" alt="Circle Image" />
+
+        <div class="card" style="left: 996px; top: 611px;">
+            <img src="https://placehold.co/359x250" alt="Project Image" />
+            <div class="card-text">Project</div>
+        </div>
+
+        <div class="card" style="left: 516px; top: 611px;">
+            <img src="https://placehold.co/359x250" alt="Icon Design Image" />
+            <div class="card-text">Icon design</div>
+        </div>
+
+        <div class="card" style="left: 28px; top: 611px;">
+            <img src="https://placehold.co/359x250" alt="Thematic Games Image" />
+            <div class="card-text">Thematic Games <br />project</div>
+        </div>
+
+        <div class="button" style="left: 1171px; top: 437px;">
+            <div class="button-text">Learn more</div>
+        </div>
+
+        <div class="nav-item" style="width: 114px; height: 53px; left: 895px; top: 93px;">Home</div>
+        <div class="nav-item" style="width: 154px; height: 51px; left: 1223px; top: 90px;">Contact</div>
+        <div class="nav-item" style="width: 114px; height: 60px; left: 1054px; top: 93px;">About</div>
+
+        <div class="bla-text">
+            Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.........
+        </div>
+    </div>
+</body>
+</html>
 
