@@ -12,7 +12,7 @@
 
 			// Carousels
 				carousels: {
-					speed: 10,
+					speed: 6,
 					fadeIn: true,
 					fadeDelay: 250
 				},
