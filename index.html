@@ -1,394 +1,548 @@
-<!DOCTYPE HTML>
-<!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sofia Langkilde Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofia Langkilde — Medialogi, UX/UI & Kreativ Teknologi</title>
+  <meta name="description" content="Portfolio for Sofia Langkilde. Medialogi-studerende på Aalborg Universitet (AAU) med speciale i UX/UI Design, 3D/Blender, Game Design og Webudvikling." />
 
-			<!-- Header -->
-				<div id="header">
+  <!-- Google Fonts: Plus Jakarta Sans, Instrument Serif & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-								<h1><a href="index.html" id="logo">Sofia Langkilde</a></h1>
-								<hr />
-								<p>Welcome to my portfolio</p>
-							</header>
-							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
-							</footer>
-						</div>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="right-sidebar.html">Personal Projects</a></li>
-								<li><a href="#">Skills</a></li>
-								<li><a href="#">Work Experience</a></li>
-								<li>
-									<a href="#">Projects</a>
-									<ul>
-										<li><a href="P1_project.html">P1</a></li>
-										<li><a href="P2_project.html">P2</a></li>
-										<li><a href="P3_project.html">P3</a></li>
-                                        <li><a href="P4_project.html">P4</a></li>
-                                        <li><a href="P5_project.html">P5</a></li>
-                                        <li><a href="P6_project.html">P6</a></li>
-										<li>
-							
-						
-								
-											<!--<a href="#">And a submenu &hellip;</a>
-											<ul>
-												<li><a href="#">Lorem ipsum dolor</a></li>
-												<li><a href="#">Phasellus consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-                                            
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul> 
-								</li> 
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li> --> 
+  <!-- Organiske baggrunds-gløder ( skaber en levende, naturinspireret atmosfære ) -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-								
-							</ul>
-						</nav>
+  <!-- ==========================================================================
+       NAVIGATION (Sticky Glassmorphism Bar)
+       ========================================================================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Hovednavigation">
+      <a href="#top" class="brand-logo">
+        <span class="logo-dot"></span>
+        Sofia Langkilde
+      </a>
 
-				</div>
+      <!-- Mobil menu-knap -->
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Åbn menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
 
-			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Hi. You're looking at <strong>My Portfolio</strong>.</h2>
-						<p>
-							This is my personal portfolio. Where you can see all of my own or collaborative projects and work. I hope you enjoy it!
-						</p>
-					</header>
-				</section>
+      <!-- Navigationslinks (Opfylder ønsket om hurtig adgang fra topmenuen) -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projekter" class="nav-link">Projekter</a></li>
+        <li><a href="#om-mig" class="nav-link">Hvem er jeg?</a></li>
+        <li><a href="#erfaring" class="nav-link">Skills & Erfaring</a></li>
+        <li><a href="#kontakt" class="btn btn-primary btn-sm">Kontakt mig</a></li>
+      </ul>
+    </nav>
+  </header>
 
-			<!-- Carousel -->
-				<section class="carousel">
-					<div class="reel">
+  <main>
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section container">
+      <div class="hero-grid">
+        
+        <!-- Venstre kolonne: Introduktion & CTA -->
+        <div class="hero-content reveal-up">
+          <div class="status-badge">
+            <span class="pulse-indicator"></span>
+            Medialogi @ AAU • Åben for praktik & studiejob
+          </div>
 
-						<article>
-							<a href="P1_project.html" class="image featured"><img src="images/Portfolio/P1 photo/CoverImage_v1.png" alt="" /></a>
-							<header>
-								<h3><a href="P1_project.html">P1 - Beneath the surface</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+          <h1 class="hero-title">
+            Jeg forener <span class="serif-italic">menneskelig æstetik</span>, 3D-verdener og intuitiv teknologi.
+          </h1>
 
-						<article>
-							<a href="P2_project.html" class="image featured"><img src="images/Portfolio/P2 photo/Evergrow start screen.jpeg" alt="" /></a>
-							<header>
-								<h3><a href="P2_project.html">P2 - Evergrow</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+          <p class="hero-subtitle">
+            Hej, jeg er <strong>Sofia Langkilde</strong>. Jeg studerer Medialogi på Aalborg Universitet, hvor jeg designer og udvikler digitale brugeroplevelser — fra brugercentreret UX/UI og webdesign til 3D-modellering i Blender og interaktivt game design.
+          </p>
 
-						<article>
-							<a href="P3_project.html" class="image featured"><img src="images/Portfolio/P3 Photo/Cronolink picture.png" alt="" /></a>
-							<header>
-								<h3><a href="P3_project.html">P3 - Chronolink</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+          <div class="hero-actions">
+            <a href="#projekter" class="btn btn-primary">
+              Udforsk mine projekter
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#om-mig" class="btn btn-secondary">Lær mig at kende</a>
+          </div>
 
-						<article>
-							<a href="P4_project.html" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3><a href="P4_project.html">P4</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+          <!-- Hurtige nøgleord -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">UX/UI</span>
+              <span class="highlight-label">Research, Prototyping & Test</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">3D & Spil</span>
+              <span class="highlight-label">Blender, Unity & Interaktion</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">Kode</span>
+              <span class="highlight-label">Frontend, C# & Problemløsning</span>
+            </div>
+          </div>
+        </div>
 
-						<article>
-							<a href="P5_project.html" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="P5_project.html">P5</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+        <!-- Højre kolonne: Organisk Visuelt Hero-Kort -->
+        <div class="hero-visual reveal-up" style="transition-delay: 150ms;">
+          <div class="organic-showcase-card">
+            <img 
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=85" 
+              alt="Abstrakt organisk 3D-kunst og digital æstetik" 
+              class="hero-main-img"
+            />
+            <!-- Svævende mikro-kort 1 -->
+            <div class="floating-pill pill-top">
+              <span class="pill-icon">✦</span>
+              <div>
+                <strong>Brugercentreret Design</strong>
+                <span>Fra idé & test til færdigt produkt</span>
+              </div>
+            </div>
+            <!-- Svævende mikro-kort 2 -->
+            <div class="floating-pill pill-bottom">
+              <span class="pill-icon">◈</span>
+              <div>
+                <strong>Kreativ Teknologi</strong>
+                <span>UX • Blender 3D • Game Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<article>
-							<a href="P6_project.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3><a href="P6_project.html">P6</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+      </div>
+    </section>
 
-						<!--<article>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Fermentum sagittis proin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+    <!-- ========================================================================
+         PROJEKTER (Med filtre for Gruppe/Studieprojekter vs. Egne projekter)
+         ======================================================================== -->
+    <section class="projects-section container section-padding" id="projekter">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Udvalgt arbejde</span>
+        <h2 class="section-title">Projekter & <span class="serif-italic">Case Studies</span></h2>
+        <p class="section-desc">
+          Et indblik i både de studie- og gruppeprojekter, jeg har været med til at skabe på AAU, samt mine egne individuelle kreative projekter. Klik på et projekt for at se min rolle, proces og hvad jeg tager med videre.
+        </p>
+      </div>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+      <!-- Filter-knapper (Opfylder strukturkravet om opdeling uden at skabe rod) -->
+      <div class="project-filters reveal-up" role="tablist" aria-label="Filtrér projekter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Alle projekter</button>
+        <button class="filter-btn" data-filter="gruppe" role="tab" aria-selected="false">Studie- & Gruppeprojekter</button>
+        <button class="filter-btn" data-filter="egne" role="tab" aria-selected="false">Egne individuelle projekter</button>
+        <button class="filter-btn" data-filter="ux" role="tab" aria-selected="false">UX/UI & Web/App</button>
+        <button class="filter-btn" data-filter="3d-game" role="tab" aria-selected="false">Blender 3D & Game Design</button>
+      </div>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+      <!-- Projekt-grid (Kortene genereres/styres dynamisk og åbner detalje-modal) -->
+      <div class="projects-grid" id="projects-grid">
+        
+        <!-- PROJEKT 1: Studie/Gruppeprojekt (Game Design, VR & Brugerevaluering) -->
+        <article class="project-card reveal-up" data-category="gruppe 3d-game ux" data-project-id="proj-1" tabindex="0">
+          <div class="project-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=900&q=80" alt="Interaktivt VR & Game Design Projekt" loading="lazy" />
+            <div class="project-badges">
+              <span class="badge badge-type">Studie- & Gruppeprojekt</span>
+              <span class="badge badge-tech">Game Design & VR</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Kinesthetic VR Experience & Spatial UI</h3>
+            <p class="project-card-intro">
+              Udvikling af et fysikbaseret VR-spil med fokus på spiller-involvering, rumlig 3D-lyd og intuitivt diegetisk brugerinterface.
+            </p>
+            <div class="project-tech-list">
+              <span>Unity 6 / C#</span>
+              <span>3D UI Design</span>
+              <span>Brugertest</span>
+            </div>
+            <button class="project-link-btn" aria-label="Læs mere om Kinesthetic VR Experience">
+              Se min rolle & læringspunkter
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Varius magnis sollicitudin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article> -->
+        <!-- PROJEKT 2: Eget projekt (UX/UI & App Design) -->
+        <article class="project-card reveal-up" data-category="egne ux" data-project-id="proj-2" tabindex="0">
+          <div class="project-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=900&q=80" alt="Interaktiv UX/UI App Prototype i Figma" loading="lazy" />
+            <div class="project-badges">
+              <span class="badge badge-type badge-personal">Eget Projekt</span>
+              <span class="badge badge-tech">UX/UI & App Design</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Nordic Mind — Interaktiv App & Designsystem</h3>
+            <p class="project-card-intro">
+              Fra papirprototyper til en fuldt interaktiv Figma-prototype med fokus på roligt visuelt hierarki, mikrointeraktioner og brugerrejser.
+            </p>
+            <div class="project-tech-list">
+              <span>Figma</span>
+              <span>UX Research</span>
+              <span>Prototyping</span>
+            </div>
+            <button class="project-link-btn" aria-label="Læs mere om Nordic Mind">
+              Se min rolle & læringspunkter
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
 
-					</div>
-				</section>
+        <!-- PROJEKT 3: Eget Projekt (Blender 3D & Organiske Miljøer) -->
+        <article class="project-card reveal-up" data-category="egne 3d-game" data-project-id="proj-3" tabindex="0">
+          <div class="project-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=900&q=80" alt="Blender 3D Organisk Miljø og Shaders" loading="lazy" />
+            <div class="project-badges">
+              <span class="badge badge-type badge-personal">Eget Projekt</span>
+              <span class="badge badge-tech">Blender & 3D</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Botanical Shaders & 3D Miljødesign</h3>
+            <p class="project-card-intro">
+              Udforskning af procedurale materialer, partikelsystemer og nøglebillede-animation i Blender med fokus på naturinspireret lys og stemning.
+            </p>
+            <div class="project-tech-list">
+              <span>Blender 3D</span>
+              <span>Procedural Nodes</span>
+              <span>Animation</span>
+            </div>
+            <button class="project-link-btn" aria-label="Læs mere om Botanical Shaders">
+              Se min rolle & læringspunkter
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
 
-			<!-- Main -->
-				<div class="wrapper style2">
+        <!-- PROJEKT 4: Studie/Gruppeprojekt (HCI, Programmering & Brugertest) -->
+        <article class="project-card reveal-up" data-category="gruppe ux" data-project-id="proj-4" tabindex="0">
+          <div class="project-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="HCI Sensor Interface & Empirisk Brugerevaluering" loading="lazy" />
+            <div class="project-badges">
+              <span class="badge badge-type">Studie- & Gruppeprojekt</span>
+              <span class="badge badge-tech">HCI & Programmering</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Alternative Input-Controllere & HCI Studie</h3>
+            <p class="project-card-intro">
+              Udvikling af en netværksbaseret smartphone-controller via gyroskop- og touch-sensorer efterfulgt af kvantitativ brugerevaluering.
+            </p>
+            <div class="project-tech-list">
+              <span>Processing / Java</span>
+              <span>UDP Netværk</span>
+              <span>Brugerevaluering</span>
+            </div>
+            <button class="project-link-btn" aria-label="Læs mere om Alternative Input-Controllere">
+              Se min rolle & læringspunkter
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
 
-					<article id="main" class="container special">
-						<a href="#" class="image featured"><img src="images/SLA copy.jpg" alt="" /></a>
-						<header>
-							<h2></a><strong>Who am i?</strong></a></h2>
-							<p>
-								I am a 23 year old student at Aalborg University, studying Medialogy. I am currently in my 5th semester and will graduate in the summer of 2027. I have a passion
-								for creativity and technology, and I enjoy working on projects that combine both.
-							</p>
-						</header>
-						<p>
-							In the last couple of years i have been working on progression my own knowledge and skills in blender, were i have been creating 3D models, animations and visual effects.
-							I have also been working on my programming skills, and have been learning new programming languages and frameworks. I am always looking for new challenges and opportunities to learn.
-						</p>
-						<footer>
-							<a href="#footer" class="button circled scrolly">Contact Me</a>
-						</footer>
-					</article>
+      </div>
+    </section>
 
-				</div>
+    <!-- ========================================================================
+         OM MIG SEKTION (Kortfattet, menneskelig og fokuseret på værdiskabelse)
+         ======================================================================== -->
+    <section class="about-section section-padding" id="om-mig">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Venstre: Portræt / Visuel Identitet -->
+          <div class="about-visual reveal-up">
+            <div class="portrait-frame">
+              <!-- Erstat src med dit eget portrætbillede (fx assets/img/sofia.jpg) -->
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                alt="Portræt af Sofia Langkilde" 
+                class="portrait-img"
+              />
+              <div class="portrait-caption">
+                <span>Sofia Langkilde</span>
+                <small>København • Medialogi @ AAU</small>
+              </div>
+            </div>
+          </div>
 
-			<!-- Features -->
-				<div class="wrapper style1">
+          <!-- Højre: Fortælling & "Hvad jeg bringer til bordet" -->
+          <div class="about-content reveal-up">
+            <span class="section-eyebrow">Hvem er jeg?</span>
+            <h2 class="section-title">En designer der forstår koden — og en udvikler der forstår <span class="serif-italic">mennesket</span>.</h2>
+            
+            <p class="about-lead">
+              For mig handler godt digitalt håndværk ikke om at vælge mellem logik og kreativitet, men om at få dem til at spille sammen. På Medialogi ved Aalborg Universitet arbejder jeg hver dag i spændingsfeltet mellem brugeroplevelser, visuel formgivning og teknisk implementering.
+            </p>
 
-					<section id="features" class="container special">
-						<header>
-							<h2>My personal projects, skills and experience</h2>
-							<p>Here i list some of my personal projects, skills and the previous work experience i have gained.</p>
-						</header>
-						<div class="row">
-							<article class="col-4 col-12-mobile special">
-								<a href="right-sidebar.html" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-								<header>
-									<h3><a href="right-sidebar.html">My personal projects</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-								<header>
-									<h3><a href="#">My skills</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-								<header>
-									<h3><a href="#">My work experience</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-						</div>
-					</section>
+            <!-- De 3 kerne-piller (sikrer at teksten aldrig bliver en "lang roman") -->
+            <div class="value-cards">
+              <div class="value-card">
+                <div class="value-icon">01</div>
+                <div>
+                  <h3>Hvad jeg brænder for</h3>
+                  <p>Jeg elsker at skabe digitale universer, hvor organiske former, farverige detaljer og gennemtænkte mikrointeraktioner gør teknologien varm og indbydende.</p>
+                </div>
+              </div>
 
-				</div>
+              <div class="value-card">
+                <div class="value-icon">02</div>
+                <div>
+                  <h3>Min tilgang til design & teknologi</h3>
+                  <p>Jeg prototyper tidligt og iterativt. Uanset om det er en Figma-brugerrejse, en 3D-scene i Blender eller en spilmekanik, validerer jeg mine valg gennem reelle brugertests.</p>
+                </div>
+              </div>
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
+              <div class="value-card">
+                <div class="value-icon">03</div>
+                <div>
+                  <h3>Hvad jeg bringer til bordet</h3>
+                  <p>En alsidig holdspiller, der kan tale både designerens og udviklerens sprog, omsætte komplekse problemer til overskuelige løsninger og skabe god energi i teamet.</p>
+                </div>
+              </div>
+            </div>
 
-							<!-- Tweets -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
-									</header>
-									<ul class="divided">
-										<li>
-											<article class="tweet">
-												Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
-												<!-- <span class="timestamp">5 minutes ago</span> -->
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												Hendrerit rutrum quisque.
-												
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
-												
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
-										
-											</article>
-										</li>
-									</ul>
-								</section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<!-- Posts -->
-							 <!-- 
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
-									</header>
-									<ul class="divided">
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="#">Nisl fermentum integer</a></h3>
-												</header>
-												<span class="timestamp">3 hours ago</span>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="#">Phasellus portitor lorem</a></h3>
-												</header>
-												<span class="timestamp">6 hours ago</span>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="#">Magna tempus consequat</a></h3>
-												</header>
-												<span class="timestamp">Yesterday</span>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="#">Feugiat lorem ipsum</a></h3>
-												</header>
-												<span class="timestamp">2 days ago</span>
-											</article>
-										</li>
-									</ul>
-								</section> -->
+    <!-- ========================================================================
+         SKILLS & ERFARING (Kompetence-overblik + Tidslinje)
+         ======================================================================== -->
+    <section class="experience-section container section-padding" id="erfaring">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Kompetencer & Baggrund</span>
+        <h2 class="section-title">Færdigheder & <span class="serif-italic">Erfaring</span></h2>
+        <p class="section-desc">
+          Kombinationen af min akademiske værktøjskasse fra Medialogi, kreative produktioner og mangeårig erhvervserfaring.
+        </p>
+      </div>
 
-							<!-- Photos -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
-									</header>
-									<div class="row gtr-25">
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+      <div class="skills-experience-grid">
+        
+        <!-- Venstre kolonne: Kompetencer opdelt i 3 domæner -->
+        <div class="skills-column reveal-up">
+          <h3 class="column-heading">Værktøjskasse & Kompetencer</h3>
 
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <span class="skill-dot dot-green"></span>
+              <h4>UX/UI, Web- & App Design</h4>
+            </div>
+            <p>Brugercentreret design, wireframing, interaktive prototyper, designsystemer og empirisk brugerevaluering.</p>
+            <div class="skill-tags">
+              <span>UX/UI Design</span>
+              <span>Figma</span>
+              <span>Webdesign</span>
+              <span>App Design</span>
+              <span>Brugertest & HCI</span>
+              <span>Informationsarkitektur</span>
+            </div>
+          </div>
 
-								<!-- Contact -->
-									<!-- <section class="contact">
-										<header>
-											<h3>Nisl turpis nascetur interdum?</h3>
-										</header>
-										<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-										</ul>
-									</section>
-									-->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <span class="skill-dot dot-terracotta"></span>
+              <h4>3D, Blender & Game Design</h4>
+            </div>
+            <p>3D-modellering, procedurale materialer/shaders, partikelsystemer, spilmekanikker, level- og lydoplevelser.</p>
+            <div class="skill-tags">
+              <span>Blender</span>
+              <span>3D-modellering</span>
+              <span>Game Design</span>
+              <span>Unity</span>
+              <span>Animation</span>
+              <span>Filmeditering</span>
+            </div>
+          </div>
 
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <span class="skill-dot dot-lavender"></span>
+              <h4>Programmering & Kreativ Problemløsning</h4>
+            </div>
+            <p>Opbygning af funktionelle prototyper, responsiv frontend-kode og systematisk fejlfinding på tværs af platforme.</p>
+            <div class="skill-tags">
+              <span>HTML5 & CSS3</span>
+              <span>JavaScript</span>
+              <span>C# (Unity)</span>
+              <span>Processing / Java</span>
+              <span>Git & GitHub</span>
+              <span>Kreativ problemløsning</span>
+            </div>
+          </div>
+        </div>
 
-							</div>
+        <!-- Højre kolonne: Arbejdserfaring & Uddannelse -->
+        <div class="timeline-column reveal-up" style="transition-delay: 150ms;">
+          <h3 class="column-heading">Uddannelse & Arbejdserfaring</h3>
 
-						</div>
-					</div>
-				</div>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <span class="timeline-date">Igværende • København</span>
+              <h4 class="timeline-role">Medialogi (Medialogy)</h4>
+              <span class="timeline-org">Aalborg Universitet (AAU)</span>
+              <p class="timeline-desc">
+                Projektbaseret studie i krydsfeltet mellem teknologi, human-computer interaction (HCI), UX/UI, spiludvikling, 3D-grafik og programmering. Vant til tæt tværfagligt gruppearbejde fra idé til evaluering.
+              </p>
+            </div>
 
-		</div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <span class="timeline-date">7 års erfaring • Service & Kvalitet</span>
+              <h4 class="timeline-role">Professionel Barista & Kvalitetsansvarlig</h4>
+              <span class="timeline-org">Specialkaffe & Cafédrift</span>
+              <p class="timeline-desc">
+                Syv års erfaring i travle miljøer med høje krav til præcision, håndværk, overblik under pres og nærværende kundeservice. Har styrket mine evner til kommunikation, samarbejde og hurtig problemløsning i praksis.
+              </p>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <span class="timeline-date">Løbende • Kreative Projekter</span>
+              <h4 class="timeline-role">Digital Illustration, 3D & Medieproduktion</h4>
+              <span class="timeline-org">Selvstændige projekter & Freelance</span>
+              <p class="timeline-desc">
+                Udvikling af grafiske assets, 3D-miljøer i Blender, videoredigering og interaktive designkoncepter.
+              </p>
+            </div>
 
-	</body>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         KONTAKT SEKTION (Med organisk kurvet overgang & mørk kontrast)
+         ======================================================================== -->
+    <div class="organic-wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 40C320 110 640 -20 960 40C1200 85 1360 60 1440 30V100H0V40Z" fill="#141D1A"/>
+      </svg>
+    </div>
+
+    <section class="contact-section" id="kontakt">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Venstre: Direkte kontaktinfo & CV -->
+          <div class="contact-info reveal-up">
+            <span class="section-eyebrow eyebrow-light">Kontakt mig</span>
+            <h2 class="section-title title-light">
+              Lad os skabe noget <span class="serif-italic">mindeværdigt</span> sammen.
+            </h2>
+            <p class="contact-text">
+              Søger I en engageret praktikant, studentermedhjælper eller samarbejdspartner inden for UX/UI, digitalt design eller kreativ teknologi? Jeg vil elske at høre fra jer over en kop kaffe.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:sofia.langkilde@eksempel.dk" class="contact-card-link">
+                <span class="contact-icon">✉</span>
+                <div>
+                  <small>Arbejdsmail</small>
+                  <strong>sofia.langkilde@eksempel.dk</strong>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                <span class="contact-icon">in</span>
+                <div>
+                  <small>LinkedIn</small>
+                  <strong>linkedin.com/in/sofia-langkilde</strong>
+                </div>
+              </a>
+            </div>
+
+            <div class="cv-download-box">
+              <a href="assets/Sofia_Langkilde_CV.pdf" download class="btn btn-light">
+                Download mit CV (PDF)
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Højre: Kontaktformular -->
+          <div class="contact-form-wrapper reveal-up" style="transition-delay: 150ms;">
+            <form class="contact-form" id="contact-form">
+              <h3>Send en direkte besked</h3>
+              
+              <div class="form-group">
+                <label for="name">Dit navn</label>
+                <input type="text" id="name" name="name" placeholder="Fx Anders Jensen" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Din e-mail</label>
+                <input type="email" id="email" name="email" placeholder="anders@virksomhed.dk" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Hvad drejer det sig om?</label>
+                <select id="subject" name="subject">
+                  <option value="Studiejob / Praktik">Studiejob eller Praktik</option>
+                  <option value="Jobmulighed">Fremtidig jobmulighed</option>
+                  <option value="Projektsamarbejde">Projektsamarbejde</option>
+                  <option value="Andet">Bare en hilsen / Kaffe</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Besked</label>
+                <textarea id="message" name="message" rows="4" placeholder="Fortæl kort om muligheden eller projektet..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send besked
+              </button>
+              <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+
+        <footer class="site-footer">
+          <p>© <span id="current-year"></span> Sofia Langkilde — Designet & kodet med omtanke. Hostet på GitHub Pages.</p>
+          <a href="#top" class="back-to-top">Tilbage til toppen ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PROJEKT CASE STUDY MODAL (Åbner når man klikker på et projektkort)
+       Sikrer at brugeren får alle detaljer (Rolle, Læring, Resultater) uden rod!
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Luk projektvisning">✕</button>
+      
+      <div class="modal-content" id="modal-body">
+        <!-- Indholdet indsættes dynamisk fra script.js baseret på valgt projekt -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>
